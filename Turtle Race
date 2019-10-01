@@ -1,0 +1,82 @@
+#!/bin/python3
+
+from turtle import *
+from random import randint
+
+speed(0)
+penup()
+goto(-140, 140)
+
+for step in range(15):
+  write(step)
+  right(90)
+  forward(10)
+  pendown()
+  forward(150)
+  penup()
+  backward(160)
+  left(90)
+  forward(20)
+  
+Gerhardt = Turtle()
+Gerhardt.color('purple')
+Gerhardt.shape('turtle')
+
+Gerhardt.penup()
+Gerhardt.goto(-160, 100)
+Gerhardt.pendown()
+
+for turn in range(10):
+  Gerhardt.right(36)
+
+John = Turtle()
+John.color('red')
+John.shape('turtle')
+
+John.penup()
+John.goto(-160, 75)
+John.pendown()
+
+for turn in range(10):
+  John.left(36)
+
+Broccoli = Turtle()
+Broccoli.color('green')
+Broccoli.shape('turtle')
+
+Broccoli.penup()
+Broccoli.goto(-160, 50)
+Broccoli.pendown()
+
+for turn in range(10):
+  Broccoli.right(36)
+  
+Trump = Turtle()
+Trump.color('orange')
+Trump.shape('turtle')
+
+Trump.penup()
+Trump.goto(-160, 25)
+Trump.pendown()
+
+for turn in range(10):
+  Trump.left(36)  
+
+Mae = Turtle()
+Mae.color('black')
+Mae.shape('turtle')
+
+Mae.penup()
+Mae.goto(-160, 0)
+Mae.pendown()
+
+for turn in range(10):
+  Mae.right(36)  
+
+for turn in range(100):
+  Gerhardt.forward(randint(1, 5))
+  John.forward(randint(1, 5))
+  Broccoli.forward(randint(1,5))
+  Trump.forward(randint(1,5))
+  Mae.forward(randint(1,5))
+  
