@@ -80,6 +80,8 @@ def AI_Move():
   
   #Start het minimax algoritme
   move = minimax(board, depth, 'O')
+  
+  #Print een "O" op de meest gunstige positie
   board[move[0]] = 'O'
   printBorder()
 
